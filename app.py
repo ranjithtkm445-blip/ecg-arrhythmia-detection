@@ -502,6 +502,14 @@ def generate_ecg_plot(ecg_filtered, valid_r_peaks,
 def index():
     """Serve the main HTML page"""
     return render_template('index.html')
+@app.route('/test')
+def test():
+    """Test route to confirm server is running"""
+    return jsonify({
+        'status' : 'Server is running',
+        'models' : 'RF + CNN loaded',
+        'message': 'Ready to analyze ECG'
+    })
 
 @app.route('/analyze', methods=['POST'])
 def analyze():

@@ -1,0 +1,26 @@
+# Virtual environment
+ecg_env/
+
+# Uploaded files
+uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output plots
+step1_output.png
+step2_output.png
+step3_output.png
+step4_output.png
+step4b_output.png
+step5_dashboard.png
+
+# Large data files
+mit-bih-arrhythmia-database-1.0.0/
+feature_table.csv

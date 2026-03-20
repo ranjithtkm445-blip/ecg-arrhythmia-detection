@@ -1,0 +1,58 @@
+flask==3.1.0
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.2
+matplotlib==3.10.0
+wfdb==4.1.2
+scikit-learn==1.6.1
+tensorflow-cpu==2.19.0
+gunicorn==23.0.0
+```
+
+---
+
+### File 2 — `Procfile`
+📁 **Location:** `D:\ecg_arr\Procfile`
+🎯 **Purpose:** Tells Render how to start your app.
+
+Create this file with exactly this content (no extension):
+```
+web: gunicorn app:app
+```
+
+---
+
+### File 3 — `.gitignore`
+📁 **Location:** `D:\ecg_arr\.gitignore`
+🎯 **Purpose:** Tells GitHub which files to ignore (venv, uploads, etc).
+```
+# Virtual environment
+ecg_env/
+
+# Uploaded files
+uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output plots
+step1_output.png
+step2_output.png
+step3_output.png
+step4_output.png
+step4b_output.png
+step5_dashboard.png
+
+# Data files (too large)
+data/
+mit-bih-arrhythmia-database-1.0.0/
+feature_table.csv
